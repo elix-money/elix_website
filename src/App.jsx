@@ -4,6 +4,7 @@ import Home from './Home';
 import Terms from './Terms';
 import Privacy from './Privacy';
 import NewsletterModal from './NewsletterModal';
+import ScrollToTop from './ScrollToTop';
 import './index.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home openModal={openModal} />} />
         <Route path="/terms" element={<Terms openModal={openModal} />} />
