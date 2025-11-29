@@ -527,7 +527,7 @@ button:active {
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
 }
 
-.modal-input {
+input[type="email"].modal-input {
   font-family: 'Lexend', sans-serif;
   flex: 1;
   padding: 0.75rem 1rem;
@@ -538,7 +538,7 @@ button:active {
   outline: none;
 }
 
-.modal-input::placeholder {
+input[type="email"].modal-input::placeholder {
   color: #666;
   font-weight: 500;
 }
