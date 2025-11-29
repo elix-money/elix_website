@@ -139,17 +139,21 @@ h1 {
   position: relative;
   display: flex;
   align-items: center;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   /* Slightly sharper radius from image */
   padding: 4px;
   transition: all 0.2s;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
 }
 
 .input-wrapper:focus-within {
-  border-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
 }
 
 input[type="email"] {
@@ -159,13 +163,13 @@ input[type="email"] {
   background: transparent;
   font-size: 0.9rem;
   /* Slightly smaller font */
-  color: #333;
+  color: #ffffff;
   outline: none;
 }
 
 input[type="email"]::placeholder {
-  color: #666;
-  /* Darker placeholder */
+  color: rgba(255, 255, 255, 0.7);
+  /* Lighter placeholder for glass effect */
   font-weight: 500;
 }
 
@@ -199,6 +203,7 @@ button:active {
   font-size: 0.875rem;
   color: var(--color-text-muted);
   text-align: left;
+  font-weight: 700;
 }
 
 /* Badges */
